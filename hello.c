@@ -10,10 +10,10 @@
  * the names don't matter, it's just that if main() is given any arguments, it'll end up in those.
  */
 
-int main(int argc, char *argv[]) {
-	printf("Hi there.\n");
+int main(){
+	printf("ma ale o, toki a\n");
 
-	/* There's no need for a return here. In C99, return can be obmitted in main(), as there is an
+	/* There's no need for a return here. In C99, return can be omitted in main(), as there is an
 	 * implicit `return 0`.
 	 */
 }
