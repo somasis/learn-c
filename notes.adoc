@@ -1,0 +1,23 @@
+= Notes on C
+
+== Variables and Types
+
+There's a level of style when it comes to the placement of `*`, in declarations. However, for the
+sake of simplicity, just use `char *name1, *name2` for consistency's sake.
+
+In a declaration, an asterisk declares a pointer, and then later when you're using that declared
+variable, you'd use `*name` to dereference the pointer and attain the actual value.
+
+`char`::
+    A single character. C doesn't actually have a `string` type.
+    Instead, to create a string, you would use `char *name`; a `char *name` creates a series of
+    characters in memory.
+    * When using with with something like `fprintf()`, you actually just pass the non-dereferenced
+      variable; `fprintf(stderr, "%s\n", usage)` will work fine, as `fprintf()` expects a `char*`.
+
+=== Pitfalls
+
+`const`::
+    `const` is basically just syntactic sugar. It'll make the compiler emit warnings but it doesn't
+    really mean anything, semantically.
+
